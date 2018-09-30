@@ -1,2 +1,0 @@
-https://jarroba.com/multitarea-e-hilos-en-java-con-ejemplos-thread-runnable/
-https://jarroba.com/multitarea-e-hilos-en-java-con-ejemplos-ii-runnable-executors/
