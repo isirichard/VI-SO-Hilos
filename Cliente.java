@@ -1,18 +1,27 @@
 
 public class Cliente {
-	private String nombre;
-	private int tiempoEnCaja; //el tiempo que demora que una caja termine de atender a un cliente
+	private int numero;
+	private int tiempoEnElegirProductos; //el tiempo que demora un cliente al elegir sus productos a comprar
+	private int tiempoEnCaja;  //el tiempo que demora en la caja
 	
-	public Cliente(String _nombre, int _tiempoEnCaja){
-		this.nombre=_nombre;
-		this.tiempoEnCaja=_tiempoEnCaja;
+	
+	public Cliente(int _numero,int _tiempoEnElegirProductos, int _tiempoEnCaja){
+		this.numero=_numero;
+		this.tiempoEnElegirProductos = _tiempoEnElegirProductos;
+		this.tiempoEnCaja = _tiempoEnCaja;
 		
 	}
-	public String getNombre() {
-		return nombre;
+	public int getNumero() {
+		return numero;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNumero(int _numero) {
+		this.numero = _numero;
+	}
+	public int getTiempoEnElegirProductos() {
+		return tiempoEnElegirProductos;
+	}
+	public void setTiempoEnElegirProductos(int _tiempoEnElegirProductos) {
+		this.tiempoEnElegirProductos = _tiempoEnElegirProductos;
 	}
 	public int getTiempoEnCaja() {
 		return tiempoEnCaja;

@@ -5,24 +5,17 @@ import java.util.concurrent.Executors;
 public class main {
     
     public static void main(String[] args) {
-    	int numCajeros = 7; //N
-    	int numClientes = 20; //M
+    	int numCajeros = 3; //N
+    	int numClientes = 10; //M
         ArrayList<Cliente>clientes = new ArrayList<Cliente>();
-        
-        for(int i = 0; i < numClientes; i++){
-        	String c = "cliente " + String.valueOf(i+1);
-        	clientes.add(new Cliente(c, (int)(Math.random()*11)+5)); //rango 5-15
-        }
-        clientes.add(new Cliente("Cliente 1", 12)); 
-        clientes.add(new Cliente("Cliente 2", 5)); 
-        clientes.add(new Cliente("Cliente 3", 3)); 
-        
         
         long init = System.currentTimeMillis();  
         
         ExecutorService executor = Executors.newFixedThreadPool(numCajeros);
-        for (Cliente cliente: clientes) {
-            Runnable cajera = new Cajeros(cliente, init);
+        for(int i = 0; i < numClientes; i++){	
+        	
+       	clientes.add(new Cliente(i+1, (int)(Math.random()*11)+2, (int)(Math.random()*11)+2)); 
+            Runnable cajera = new Cajeros(clientes.get(i), init);
             executor.execute(cajera);
         }
         executor.shutdown();	// Cierro el Executor
