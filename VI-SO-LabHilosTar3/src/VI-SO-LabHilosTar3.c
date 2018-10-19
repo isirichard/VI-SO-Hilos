@@ -14,6 +14,8 @@
 #include <string.h>
 #include <time.h>
 void* hilo1(void* args) {
+	//asdasdaskjdlasjidljailsdjasidjlas
+
 	char msg[] = "Hola";
 	int i;
 	int aleatorio;
