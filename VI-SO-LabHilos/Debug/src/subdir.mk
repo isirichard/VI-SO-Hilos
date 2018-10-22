@@ -4,15 +4,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/Hilo2.c \
 ../src/VI-SO-LabHilos.c 
 
 OBJS += \
-./src/Hilo2.o \
 ./src/VI-SO-LabHilos.o 
 
 C_DEPS += \
-./src/Hilo2.d \
 ./src/VI-SO-LabHilos.d 
 
 
