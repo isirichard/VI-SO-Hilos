@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/CYGWIN_HOME/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/CYGWIN_HOME/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/CYGWIN_HOME/value=
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/PATH/value=${CYGWIN_HOME}/bin;C\:/Program Files/Java/jre1.8.0_191/bin/server;C\:/Program Files/Java/jre1.8.0_191/bin;C\:/Program Files/Java/jre1.8.0_191/lib/amd64;C\:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Windows\\System32\\OpenSSH\\;C\:\\Program Files\\Git\\cmd;C\:\\MinGW\\mingw64\\bin;C\:\\cygwin64\\bin;C\:\\Users\\isi_r\\AppData\\Local\\Microsoft\\WindowsApps;C\:\\Program Files\\Java\\jdk1.8.0_181\\bin;;D\:\\eclipseC++
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/append=true
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.1057089294/appendContributed=true
