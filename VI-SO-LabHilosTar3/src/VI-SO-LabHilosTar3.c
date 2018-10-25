@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+FILE *fd;
 void* hilo1(void* args) {
 	//asdasdaskjdlasjidljailsdjasidjlas
 
@@ -40,6 +41,21 @@ void* hilo2(void* args) {
 	return NULL;
 }
 int main(int argc, char *argv[]) {
+	int c;
+	char direccion[] = "lista.txt";
+	fd = fopen(direccion,"rt");
+	if(fd == NULL){
+		printf("Error al tratar de leer el archivo");
+	}
+	while((c=fgetc(fd))!=EOF){
+		if(c=="\n"){
+			printf("\n");
+		}
+		else{
+			putchar(c);
+		}
+	}
+	fclose(fd);
 	srand((unsigned) time(NULL));
 	pthread_t h1;
 	pthread_t h2;
