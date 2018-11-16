@@ -1,0 +1,15 @@
+avahi:111:120
+avahi-autoipd:110:119
+colord:113:123
+dnsmasq:112:65534
+hplip:115:7
+isi:1000:1000
+kernoops:116:65534
+lightdm:108:114
+mysql:121:129
+pulse:117:124
+rtkit:118:126
+saned:119:127
+speech-dispatcher:114:29
+usbmux:120:46
+whoopsie:109:116
