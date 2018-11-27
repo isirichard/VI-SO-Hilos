@@ -25,10 +25,12 @@ int CrearSemaforos(int n, short* vals);
 void BorrarSemaforos(int id);
 void BloquearSemaforo(int id, int i);
 void DesbloquearSemaforo(int id, int i);
+/* enum para cambiar usuario */
 enum {
-SEM_USER_1, /*el turno de la primera persona*/
-SEM_USER_2 /*el turno de la 2da persona*/
+	SEM_USER_1, /*el turno de la primera persona*/
+	SEM_USER_2 /*el turno de la 2da persona*/
 };
+/* union para inicializarlo */
 union semun {
 	int val;
 	struct semid_ds* buf;
@@ -124,7 +126,7 @@ int tuSem; /*semáforo para el otro usuario*/
 	puts("Bienvenido a CrapChat! Escribe '\\quit' para salir\n");
 /*obtenemos el id del segmento de memoria de la línea de comandos*/
 	if(argc<2) {
-	/*no nos pasaron ningún id, así que lo creamos*/
+/*no nos pasaron ningún id, así que lo creamos*/
 		idShMem = ReservarMemoriaComp(BUFSIZ);
 		buf = (char*) MapearMemoriaComp(idShMem);
 /*Queremos que los usuarios sean bloqueados cuando traten de*/
@@ -133,6 +135,7 @@ int tuSem; /*semáforo para el otro usuario*/
 /*Para eso son los ceros.*/
 		vals[SEM_USER_1]=0;
 		vals[SEM_USER_2]=0;
+		/*CREAR E INICIALIZAR EL SEMAFORO*/
 		idSem=CrearSemaforos(2,vals);
 /*guardamos el id del semáforo en la memoria compartida para que*/
 /*el otro usuario pueda obtenerlo*/

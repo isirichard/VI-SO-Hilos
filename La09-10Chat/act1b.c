@@ -14,9 +14,9 @@ main() {
 	key_t clave;
 	int idSemaforo;
 	struct sembuf operacion;
-	union semun arg;
+	union semun arg; 
 	int i=0;
-	clave = ftok("/bin/ls",33);
+	clave = ftok("/bin/ls",33); /*usando semaforo de a*/
 	if (clave == (key_t)-1) {
 		printf("No puedo conseguir la clave de semaforo\n");
 		exit(0);
@@ -27,7 +27,7 @@ main() {
 		exit(0);
 	}
 	operacion.sem_num = 0;
-	operacion.sem_op = 1;
+	operacion.sem_op = 1; /*operación subir*/
 	operacion.sem_flg = 0;
 	for(i=0; i<10; i++) {
 		printf("Levanto semaforo\n");
